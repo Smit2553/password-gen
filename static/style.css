@@ -1,0 +1,19 @@
+.heading{
+    text-align: center;
+}
+
+.tableoptions{
+    margin-left: auto;
+    margin-right: auto;
+}
+.submitbutton{
+    margin: 0 auto;
+    display: block;
+}
+.box{
+    text-align: center;
+}
+
+body{
+    background-color: #bebebe;
+}

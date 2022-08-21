@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+        <body>
+            <table class="tableoptions">
+                <tr>
+                    <td>
+                        <img src="../static/padlock.png" style="width: 100px; height: 100px">
+                    </td>
+                    <td>
+                        <h1 class="heading">Simple Password Generator</h1>
+                    </td>
+                </tr>
+
+            </table>
+
+            <hr>
+            <form action="/" method="post">
+                <table class="tableoptions">
+                    <tr>
+                        <td>Capital Letters</td>
+                        <td><input type="checkbox" value="upper" name="mycheckbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Lowercase Letters</td>
+                        <td><input type="checkbox" value="lower" name="mycheckbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Numbers</td>
+                        <td><input type="checkbox" value="num" name="mycheckbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Special Characters <strong>(</strong>! @ # $ % ^ & * ( )<strong>)</strong></td>
+                        <td><input type="checkbox" value="char" name="mycheckbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Length of Password</td>
+                        <td><input type="number" value="16" name="numberbox"></td>
+                    </tr>
+                </table>
+                <input class="submitbutton" type="submit" value="Generate">
+            </form>
+            <h3 style="text-align: center">Your Password is: </h3>
+            <div class="box" style="
+            font-size: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 10px;">
+                {{ password }}
+            </div>
+        </body>
+</html>
